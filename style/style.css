@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/images/pattern-curve.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left bottom;
+}
+
+.container {
+  padding: 2rem;
+}
+
+.container .slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .slider .slide {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .slider .slide .slide-text {
+  margin: 1rem 0rem;
+  background-image: url(/images/pattern-quotes.svg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 20%;
+  text-align: center;
+  padding: 1.5rem 0rem;
+}
+
+.container .slider .slide .slide-text p.paragraph {
+  font-size: 18px;
+  color: #202046;
+  font-weight: 300;
+}
+
+.container .slider .slide .slide-text p.name {
+  margin-top: 2rem;
+  font-size: 16px;
+  font-weight: 700;
+  color: black;
+}
+
+.container .slider .slide .slide-text p.name span {
+  font-size: 16px;
+  font-weight: 500;
+  color: #babacf;
+  display: block;
+}
+
+.container .slider .slide .slide-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: url(/images/pattern-bg.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.container .slider .slide .slide-img img {
+  -webkit-box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.201);
+          box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.201);
+  width: 250px;
+}
+
+.container .slider .slide-2 {
+  display: none;
+}
+
+.container .slider .slide-btn {
+  bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  -webkit-box-shadow: 0px 10px 20px rgba(132, 132, 132, 0.312);
+          box-shadow: 0px 10px 20px rgba(132, 132, 132, 0.312);
+  border-radius: 2rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 340px;
+}
+
+.container .slider .slide-btn .prev {
+  background-color: white;
+  width: 35px;
+  padding: 0.5rem 0rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-bottom-left-radius: 2rem;
+  border-top-left-radius: 2rem;
+  cursor: pointer;
+}
+
+.container .slider .slide-btn .prev img {
+  width: 35%;
+}
+
+.container .slider .slide-btn .next {
+  border-bottom-right-radius: 2rem;
+  border-top-right-radius: 2rem;
+  background-color: white;
+  width: 35px;
+  padding: 0.5rem 0rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  cursor: pointer;
+}
+
+.container .slider .slide-btn .next img {
+  width: 35%;
+  background-color: transparent;
+}
+
+.container .slider .slide-btn .next:hover, .container .slider .slide-btn .prev:hover {
+  background-color: #dadada;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    width: 100vw;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: hidden;
+    background-size: contain;
+    background-position: left -200px bottom -200px;
+  }
+  .container {
+    max-width: 100%;
+    padding: 5rem 10rem;
+  }
+  .container .slider .slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .slider .slide .slide-text {
+    max-width: 58%;
+    text-align: left;
+    background-position: top left 100px;
+    padding: 4.7rem 0rem;
+  }
+  .container .slider .slide .slide-text p.paragraph {
+    font-size: 32px;
+    font-weight: 300;
+  }
+  .container .slider .slide .slide-text p.name {
+    margin-top: 2rem;
+    font-size: 19px;
+    font-weight: 700;
+    color: black;
+  }
+  .container .slider .slide .slide-text p.name span {
+    font-size: 19px;
+    font-weight: 400;
+    color: #babacf;
+    display: contents;
+  }
+  .container .slider .slide .slide-img {
+    padding: 4rem;
+    margin-left: -160px;
+    z-index: -1;
+  }
+  .container .slider .slide .slide-img img {
+    width: 500px;
+  }
+  .container .slider .slide-2 {
+    display: none;
+  }
+  .container .slider .slide-btn {
+    position: absolute;
+    left: 57%;
+    bottom: 14%;
+    border-radius: 2rem;
+    z-index: 20;
+  }
+  .container .slider .slide-btn .prev {
+    padding: 1rem 0rem;
+    width: 50px;
+  }
+  .container .slider .slide-btn .prev img {
+    width: 12px;
+    cursor: pointer;
+  }
+  .container .slider .slide-btn .next {
+    width: 50px;
+  }
+  .container .slider .slide-btn .next img {
+    width: 12px;
+  }
+  .container .slider .next:hover, .container .slider .prev:hover {
+    background-color: #dadada;
+  }
+}
+/*# sourceMappingURL=style.css.map */
